@@ -238,17 +238,12 @@ class ChangeBuilderImpl implements ChangeBuilder {
   }) {
     _operations.add(
       Future(() async {
-        return importPrefixGenerator == null
-            ? _innerChangeBuilder.addDartFileEdit(
-                customPath ?? path,
-                buildFileEdit,
-              )
-            : _innerChangeBuilder.addDartFileEdit(
-                customPath ?? path,
-                buildFileEdit,
-                // ignore: deprecated_member_use, deprecated already
-                importPrefixGenerator: importPrefixGenerator,
-              );
+        // `importPrefixGenerator` was removed from analyzer_plugin's ChangeBuilder
+        // API. Keep accepting it for backward compatibility but ignore it.
+        return _innerChangeBuilder.addDartFileEdit(
+          customPath ?? path,
+          buildFileEdit,
+        );
       }),
     );
   }

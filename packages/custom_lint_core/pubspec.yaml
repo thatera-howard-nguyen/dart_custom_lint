@@ -4,11 +4,11 @@ description: A package to help writing custom linters
 repository: https://github.com/invertase/dart_custom_lint
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
-  analyzer: ^9.0.0
-  analyzer_plugin: ^0.13.0
+  analyzer: ^10.0.1
+  analyzer_plugin: ^0.14.1
   collection: ^1.16.0
   custom_lint_visitor: ^1.0.0
   glob: ^2.1.2

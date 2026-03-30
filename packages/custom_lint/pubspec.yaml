@@ -5,17 +5,17 @@ repository: https://github.com/invertase/dart_custom_lint
 issue_tracker: https://github.com/invertase/dart_custom_lint/issues
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
-  analyzer: ^9.0.0
-  analyzer_plugin: ^0.13.0
+  analyzer: ^10.0.1
+  analyzer_plugin: ^0.14.1
   args: ^2.3.1
   async: ^2.9.0
   ci: ^0.1.0
   cli_util: ^0.4.2
   collection: ^1.16.0
-  custom_lint_core: 0.8.1
+  custom_lint_core: ^0.8.2
   freezed_annotation: ^3.0.0
   json_annotation: ^4.7.0
   meta: ^1.7.0
@@ -24,7 +24,7 @@ dependencies:
   pub_semver: ^2.1.1
   pubspec_parse: ^1.5.0
   rxdart: ^0.28.0
-  uuid: ">=3.0.6 <5.0.0"
+  uuid: '>=3.0.6 <5.0.0'
   yaml: ^3.1.1
 
 dev_dependencies:
